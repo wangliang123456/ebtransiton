@@ -12,10 +12,12 @@
 {
     
 }
+
 -(instancetype) initWithGesture:(UIGestureRecognizer *) gesture {
     self = [super init];
     if (self) {
-        [gesture addTarget:self action:@selector(doPan:)];
+        self.gesture = gesture;
+        [self.gesture addTarget:self action:@selector(updatePercentage:)];
     }
     return self;
 }
@@ -24,7 +26,7 @@
     return 0.5f;
 }
 
--(void) doPan:(UIGestureRecognizer *)sender {
+-(void) updatePercentage:(UIGestureRecognizer *)sender {
     if (sender.state == UIGestureRecognizerStateBegan) {
         return;
     } else if (sender.state == UIGestureRecognizerStateChanged) {
@@ -42,5 +44,6 @@
 
 -(void)startInteractiveTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     self.transitionContext = transitionContext;
+    [super startInteractiveTransition:transitionContext];
 }
 @end

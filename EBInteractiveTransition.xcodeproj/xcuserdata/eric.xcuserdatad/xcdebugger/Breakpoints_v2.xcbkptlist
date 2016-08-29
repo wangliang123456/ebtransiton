@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EBInteractiveTransition/FirstInteractiveViewController.m"
-            timestampString = "494128531.659609"
+            timestampString = "494133934.895198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "-doPan:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,12 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EBInteractiveTransition/EBSwipeTransitionInteractionController.m"
-            timestampString = "494132949.901995"
+            timestampString = "494134173.385063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-doPan:"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-updatePercentage:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EBInteractiveTransition/EBSwipeTransitionInteractionController.m"
+            timestampString = "494134173.385063"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-startInteractiveTransition:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
