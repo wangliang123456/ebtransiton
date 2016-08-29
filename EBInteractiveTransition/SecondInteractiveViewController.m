@@ -14,7 +14,7 @@
 }
 
 - (void)viewDidLoad {
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor blueColor];
     [self addGesture];
 }
 

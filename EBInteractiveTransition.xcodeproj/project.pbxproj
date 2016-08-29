@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07069DC21D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07069DC11D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.m */; };
 		07A0DE8E1D6FD61700B07F5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A0DE8D1D6FD61700B07F5A /* main.m */; };
 		07A0DE911D6FD61700B07F5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A0DE901D6FD61700B07F5A /* AppDelegate.m */; };
 		07A0DE941D6FD61700B07F5A /* FirstInteractiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A0DE931D6FD61700B07F5A /* FirstInteractiveViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07069DC01D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSwipeTransitionAnimator.h; sourceTree = "<group>"; };
+		07069DC11D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLSwipeTransitionAnimator.m; sourceTree = "<group>"; };
 		07A0DE891D6FD61700B07F5A /* EBInteractiveTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EBInteractiveTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A0DE8D1D6FD61700B07F5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07A0DE8F1D6FD61700B07F5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 		07A0DE8B1D6FD61700B07F5A /* EBInteractiveTransition */ = {
 			isa = PBXGroup;
 			children = (
+				07069DC01D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.h */,
+				07069DC11D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.m */,
 				07A0DE8F1D6FD61700B07F5A /* AppDelegate.h */,
 				07A0DE901D6FD61700B07F5A /* AppDelegate.m */,
 				07A0DE921D6FD61700B07F5A /* FirstInteractiveViewController.h */,
@@ -298,6 +303,7 @@
 				07A0DE941D6FD61700B07F5A /* FirstInteractiveViewController.m in Sources */,
 				07A0DE911D6FD61700B07F5A /* AppDelegate.m in Sources */,
 				07A0DEC71D6FE3FA00B07F5A /* EBMapTransitionAnimator.m in Sources */,
+				07069DC21D7406DE00CD77C8 /* AAPLSwipeTransitionAnimator.m in Sources */,
 				07A0DE8E1D6FD61700B07F5A /* main.m in Sources */,
 				07A0DECF1D7046A600B07F5A /* EBSwipeTransitionInteractionController.m in Sources */,
 				07A0DECB1D7021F600B07F5A /* SecondInteractiveViewController.m in Sources */,
@@ -526,6 +532,7 @@
 				07A0DEB81D6FD61800B07F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A0DEB91D6FD61800B07F5A /* Build configuration list for PBXNativeTarget "EBInteractiveTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				07A0DEBB1D6FD61800B07F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A0DEBC1D6FD61800B07F5A /* Build configuration list for PBXNativeTarget "EBInteractiveTransitionUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +550,7 @@
 				07A0DEBE1D6FD61800B07F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,11 +15,12 @@
 @implementation FirstInteractiveViewController
 {
     UIPanGestureRecognizer *panGesture;
+    EBInteractiveTransitionDelegate *transitionDelegate;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor purpleColor];
     [self addGesture];
 }
 
@@ -31,10 +32,23 @@
 -(void) doPan:(UIPanGestureRecognizer *) sender {
     if (sender.state == UIGestureRecognizerStateBegan) {
         SecondInteractiveViewController *secondViewController = [[SecondInteractiveViewController alloc] initWithNibName:@"SecondInteractiveViewController" bundle:nil];
-        EBInteractiveTransitionDelegate *transitionDelegate = [[EBInteractiveTransitionDelegate alloc] init];
+        transitionDelegate = [[EBInteractiveTransitionDelegate alloc] init];
         secondViewController.transitioningDelegate = transitionDelegate;
         secondViewController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:secondViewController animated:YES completion:nil];
+    } else if (sender.state == UIGestureRecognizerStateChanged) {
+        NSLog(@"UIGestureRecognizerStateChanged");
+        [transitionDelegate.swipe updateInteractiveTransition:0.5];
+    } else if (sender.state == UIGestureRecognizerStateCancelled) {
+        NSLog(@"UIGestureRecognizerStateCancelled");
+        [transitionDelegate.swipe cancelInteractiveTransition];
+    } else {
+        NSLog(@"UIGestureRecognizerStateend");
+        if (0.6 > 0.5) {
+            [transitionDelegate.swipe finishInteractiveTransition];
+        } else {
+            [transitionDelegate.swipe cancelInteractiveTransition];
+        }
     }
 }
 

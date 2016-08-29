@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EBSwipeTransitionInteractionController.h"
 
 @interface EBInteractiveTransitionDelegate : NSObject<UIViewControllerTransitioningDelegate>
 @property(nonatomic,strong) UIGestureRecognizer *gesture;
-
+@property(nonatomic,strong) EBSwipeTransitionInteractionController *swipe;
 @end

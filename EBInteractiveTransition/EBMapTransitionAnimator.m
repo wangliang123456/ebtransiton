@@ -29,10 +29,10 @@
     }
     BOOL isPresenting = (toViewController.presentingViewController == fromViewController);
     [containerView addSubview:toView];
-    toView.alpha = 0.0;
+//    toView.alpha = 0.0;
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        toView.backgroundColor = [UIColor greenColor];
-        toView.alpha = 1.0;
+//        toView.backgroundColor = [UIColor greenColor];
+//        toView.alpha = 1.0;
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
     }];
