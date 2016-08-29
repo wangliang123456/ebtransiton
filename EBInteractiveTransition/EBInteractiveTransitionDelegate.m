@@ -8,6 +8,7 @@
 
 #import "EBInteractiveTransitionDelegate.h"
 #import "EBMapTransitionAnimator.h"
+#import "EBSwipeTransitionInteractionController.h"
 
 @implementation EBInteractiveTransitionDelegate
 
@@ -20,11 +21,14 @@
 }
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator {
-    return nil;
+    EBSwipeTransitionInteractionController *swipe = [[EBSwipeTransitionInteractionController alloc] init];
+    return swipe;
 }
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
-    return nil;
+    EBSwipeTransitionInteractionController *swipe = [[EBSwipeTransitionInteractionController alloc] init];
+    swipe.gesture = self.gesture;
+    return swipe;
 }
 
 -(instancetype) initWith:(UIGestureRecognizer *) gesture {

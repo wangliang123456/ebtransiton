@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPs-Bc-RQq">
-                    <rect key="frame" x="214.5" y="289.5" width="171" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPs-Bc-RQq">
+                    <rect key="frame" x="251.5" y="289.5" width="134" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -24,7 +24,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="zPs-Bc-RQq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahY-3f-bAi"/>
+                <constraint firstItem="zPs-Bc-RQq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="18.5" id="ahY-3f-bAi"/>
                 <constraint firstItem="zPs-Bc-RQq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ao8-8q-zgj"/>
             </constraints>
         </view>

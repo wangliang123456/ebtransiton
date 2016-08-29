@@ -19,6 +19,7 @@
 		07A0DEC71D6FE3FA00B07F5A /* EBMapTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A0DEC61D6FE3FA00B07F5A /* EBMapTransitionAnimator.m */; };
 		07A0DECB1D7021F600B07F5A /* SecondInteractiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A0DEC91D7021F600B07F5A /* SecondInteractiveViewController.m */; };
 		07A0DECC1D7021F600B07F5A /* SecondInteractiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A0DECA1D7021F600B07F5A /* SecondInteractiveViewController.xib */; };
+		07A0DECF1D7046A600B07F5A /* EBSwipeTransitionInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A0DECE1D7046A600B07F5A /* EBSwipeTransitionInteractionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		07A0DEC81D7021F600B07F5A /* SecondInteractiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondInteractiveViewController.h; sourceTree = "<group>"; };
 		07A0DEC91D7021F600B07F5A /* SecondInteractiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondInteractiveViewController.m; sourceTree = "<group>"; };
 		07A0DECA1D7021F600B07F5A /* SecondInteractiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondInteractiveViewController.xib; sourceTree = "<group>"; };
+		07A0DECD1D7046A600B07F5A /* EBSwipeTransitionInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSwipeTransitionInteractionController.h; sourceTree = "<group>"; };
+		07A0DECE1D7046A600B07F5A /* EBSwipeTransitionInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSwipeTransitionInteractionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				07A0DEC81D7021F600B07F5A /* SecondInteractiveViewController.h */,
 				07A0DEC91D7021F600B07F5A /* SecondInteractiveViewController.m */,
 				07A0DECA1D7021F600B07F5A /* SecondInteractiveViewController.xib */,
+				07A0DECD1D7046A600B07F5A /* EBSwipeTransitionInteractionController.h */,
+				07A0DECE1D7046A600B07F5A /* EBSwipeTransitionInteractionController.m */,
 			);
 			path = EBInteractiveTransition;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				07A0DE911D6FD61700B07F5A /* AppDelegate.m in Sources */,
 				07A0DEC71D6FE3FA00B07F5A /* EBMapTransitionAnimator.m in Sources */,
 				07A0DE8E1D6FD61700B07F5A /* main.m in Sources */,
+				07A0DECF1D7046A600B07F5A /* EBSwipeTransitionInteractionController.m in Sources */,
 				07A0DECB1D7021F600B07F5A /* SecondInteractiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
