@@ -29,7 +29,6 @@
     }
     BOOL isPresenting = (toViewController.presentingViewController == fromViewController);
     [containerView addSubview:toView];
-    toView.backgroundColor = [UIColor purpleColor];
     toView.alpha = 0.0;
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         toView.backgroundColor = [UIColor greenColor];

@@ -22,13 +22,13 @@
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator {
     EBSwipeTransitionInteractionController *swipe = [[EBSwipeTransitionInteractionController alloc] init];
-    return swipe;
+    return nil;
 }
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
     EBSwipeTransitionInteractionController *swipe = [[EBSwipeTransitionInteractionController alloc] init];
     swipe.gesture = self.gesture;
-    return swipe;
+    return nil;
 }
 
 -(instancetype) initWith:(UIGestureRecognizer *) gesture {
