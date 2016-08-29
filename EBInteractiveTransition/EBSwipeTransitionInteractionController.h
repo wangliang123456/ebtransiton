@@ -10,5 +10,6 @@
 
 @interface EBSwipeTransitionInteractionController : UIPercentDrivenInteractiveTransition
 @property(nonatomic,strong) UIGestureRecognizer *gesture;
+@property(nonatomic,strong) id<UIViewControllerContextTransitioning> transitionContext;
 -(instancetype) initWithGesture:(UIGestureRecognizer *) gesture;
 @end
